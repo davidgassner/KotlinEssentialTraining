@@ -1,3 +1,4 @@
 fun main(args: Array<String>) {
-    println("Welcome to Kotlin Essential Training!")
+    val num1 = 15
+    val num2 = 10
 }
