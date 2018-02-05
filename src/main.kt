@@ -1,3 +1,12 @@
 fun main(args: Array<String>) {
-    println("Welcome to Kotlin Essential Training!")
+    fun main(args: Array<String>) {
+        val colors = arrayOf("Red", "Green", "Blue")
+
+    }
+
+    fun printHeader(label: String) {
+        println("***************")
+        println(label)
+        println("***************")
+    }
 }
