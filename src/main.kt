@@ -1,12 +1,10 @@
 fun main(args: Array<String>) {
-    fun main(args: Array<String>) {
-        val states = arrayOf("CA", "OR", "WA")
+    val states = arrayOf("CA", "OR", "WA")
 
-    }
+}
 
-    fun printHeader(label: String) {
-        println("***************")
-        println(label)
-        println("***************")
-    }
+fun printHeader(label: String) {
+    println("***************")
+    println(label)
+    println("***************")
 }
