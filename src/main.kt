@@ -8,17 +8,7 @@ fun main(args: Array<String>) {
         val string2 = readLine()
         val number2 = string2!!.toDouble()
 
-        print("Select an operation (+ - / *): ")
-        val operation = readLine()
-
-        val result: Double? =
-                when (operation) {
-                    "+" -> addValues(number1, number2)
-                    "-" -> subtractValues(number1, number2)
-                    "*" -> multiplyValues(number1, number2)
-                    "/" -> divideValues(number1, number2)
-                    else -> throw Exception("Unknown operation")
-                }
+        val result: Double? = addValues(number1, number2)
         println("The answer is $result")
     } catch (e: NumberFormatException) {
         println("${e.message} is not a number")
@@ -27,7 +17,4 @@ fun main(args: Array<String>) {
     }
 }
 
-fun multiplyValues(number1: Double, number2: Double) = number1 * number2
-fun divideValues(number1: Double, number2: Double) = number1 / number2
-fun subtractValues(number1: Double, number2: Double) = number1 - number2
 fun addValues(number1: Double, number2: Double) = number1 + number2
