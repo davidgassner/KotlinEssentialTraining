@@ -1,9 +1,11 @@
 fun main(args: Array<String>) {
     try {
-        val number1 = MathLib.getInput("Number 1: ")
-        val number2 = MathLib.getInput("Number 2: ")
-        val result: Double? = MathLib.addValues(number1, number2)
-        println("The answer is $result")
+        val mathLib = MathLib()
+        while (true) {
+            val number = MathLib.getInput("Enter a number: ")
+            mathLib.addValue(number)
+            println("Current total: ${mathLib.runningTotal}")
+        }
     } catch (e: NumberFormatException) {
         println("${e.message} is not a number")
     } catch (e: Exception) {
