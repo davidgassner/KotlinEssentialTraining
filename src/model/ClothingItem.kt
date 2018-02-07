@@ -1,3 +1,5 @@
+package model
+
 data class ClothingItem(private var _type: String?,
                         val size: String,
                         private var _price: Double) {

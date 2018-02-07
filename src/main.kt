@@ -1,3 +1,5 @@
+import model.ClothingItem
+import model.Person
 import java.text.NumberFormat
 import java.util.*
 
