@@ -1,9 +1,6 @@
 data class ClothingItem(private var _type: String?,
                         val size: String,
                         private var _price: Double) {
-//    init {
-//        _type = _type?.toUpperCase() ?: "UNKNOWN"
-//    }
 
     var type: String? = _type
         get() = field ?: "Unknown"
