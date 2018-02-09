@@ -1,3 +1,7 @@
+import model.ClothingItem
+
 fun main(args: Array<String>) {
-    println("Welcome to Kotlin Essential Training!")
+
+    val item = ClothingItem("Shirt", "XL", 19.99)
+    println(item)
 }
